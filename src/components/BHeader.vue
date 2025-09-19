@@ -9,6 +9,9 @@
         </li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+        <li class="nav-item">
+          <router-link to="/FireLogin" class="nav-link">Firebase Login</router-link>
+        </li>
       </ul>
     </header>
   </div>

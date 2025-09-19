@@ -8,7 +8,8 @@ const formData = ref({
   password: '',
   isAustralian: false,
   reason: '',
-  gender: ''
+  gender: '',
+  suburb: 'Clayton'
 })
 
 const submittedCards = ref([])
@@ -130,6 +131,10 @@ const validatePassword = (blur) => {
                 <option value="other">Other</option>
               </select>
             </div>
+          </div>
+          <div class="mb-3">
+            <label for="reason" class="form-label">Suburb</label>
+            <input type="text" class="form-control" id="suburb" v-bind:value="formData.suburb" />
           </div>
           <div class="mb-3">
             <label for="reason" class="form-label">Reason for joining</label>
