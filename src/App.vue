@@ -1,4 +1,5 @@
 <script>
+// NoMash Library App - Updated for GitHub Pages deployment
 import BHeader from './components/BHeader.vue'
 import CountBookAPI from './views/CountBookAPI.vue';
 
