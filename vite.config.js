@@ -17,5 +17,15 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    // Generate relative paths for assets
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
   }
 })
