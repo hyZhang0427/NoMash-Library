@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - week-4-end
 
 jobs:
   build-and-deploy:
