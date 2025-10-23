@@ -21,8 +21,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    // Generate relative paths for assets
     rollupOptions: {
+      input: {
+        main: 'index.html'
+      },
       output: {
         manualChunks: undefined
       }
