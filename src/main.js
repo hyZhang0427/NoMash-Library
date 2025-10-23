@@ -22,6 +22,7 @@ const firebaseConfig = {
 initializeApp(firebaseConfig)
 const app = createApp(App)
 app.use(PrimeVue, { theme: { preset: Aura } })
-createApp(App).use(router).mount('#app')
+app.use(router)
+app.mount('#app')
 // app.component('DataTable', DataTable)
 // app.component('Column', Column)
